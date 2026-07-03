@@ -1,0 +1,78 @@
+baseURL = "https://blog.trestle.website"
+title = "Trestle DeFi Blog"
+languageCode = "en-us"
+theme = "PaperMod"
+enableRobotsTXT = true
+enableEmoji = true
+
+paginate = 10
+defaultContentLanguage = "en"
+hasCJKLanguage = false
+
+[params]
+  description = "Trestle DeFi — decentralized identity verification and sybil-resistant marketplace on Polygon"
+  author = "Trestle DeFi Team"
+  dateFormat = "2006-01-02"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowToc = false
+  comments = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+  ShowWordCount = true
+  UseHugoToc = true
+  images = ["/og-image.png"]
+
+  homeInfoParams = { Title = "Trestle DeFi Blog", Content = "Decentralized identity, sybil-resistant verification, and the future of trustless marketplaces on Polygon." }
+
+  socialIcons = [
+    { name = "github", url = "https://github.com/Trestle-DeFi" },
+    { name = "x", url = "https://x.com/TrestleDeFi" },
+  ]
+
+  assets = { favicon = "/favicon.ico", apple_touch_icon = "/favicon.ico" }
+
+  label = { icon = "/favicon.ico", iconHeight = 32, text = "Trestle DeFi" }
+
+  profileMode = { enabled = false }
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      typographer = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+
+[mediaTypes]
+  [mediaTypes."application/feed+json"]
+    suffixes = ["json"]
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss+xml"
+    baseName = "feed"
+  [outputFormats.JSON]
+    mediatype = "application/feed+json"
+    baseName = "feed"
+
+[privacy]
+  [privacy.x]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
+[services]
+  [services.googleAnalytics]
+    ID = ""
