@@ -5,7 +5,8 @@ theme = "PaperMod"
 enableRobotsTXT = true
 enableEmoji = true
 
-paginate = 10
+[pagination]
+  pagerSize = 10
 defaultContentLanguage = "en"
 hasCJKLanguage = false
 
