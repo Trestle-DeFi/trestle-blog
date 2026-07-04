@@ -31,7 +31,7 @@ hasCJKLanguage = false
 
   socialIcons = [
     { name = "github", url = "https://github.com/Trestle-DeFi" },
-    { name = "x", url = "https://x.com/TrestleDeFi" },
+    { name = "telegram", url = "https://t.me/TrestleDeFi" },
   ]
 
   assets = { favicon = "/favicon.ico", apple_touch_icon = "/favicon.ico" }
