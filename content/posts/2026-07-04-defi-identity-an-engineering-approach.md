@@ -13,18 +13,16 @@ tags: ["defi", "web3", "polygon", "trestle"]
 
     ## Introduction
 
-    Decentralized finance (DeFi) applications are vulnerable to sybil attacks, where an attacker creates multiple fake identities to manipulate the system. This can lead to financial losses and undermine trust in the application.
+    Sybil attacks pose a significant threat to decentralized finance (DeFi) applications, compromising their integrity and security. In this post, we'll explore the engineering approach to mitigating these attacks and introduce a technical solution that addresses the underlying issue.
 
-    ## The Problem
+    ## The Problem: Sybil Attacks
 
-    Traditional solutions to sybil attacks rely on centralized identity verification, which can compromise the decentralized nature of DeFi. Moreover, these solutions are often cumbersome and may not scale well with the growth of the application.
+    Sybil attacks occur when an attacker creates multiple fake identities to manipulate the outcome of a decentralized system. This can lead to voting manipulation, unfair resource allocation, and other malicious activities. Traditional solutions, such as CAPTCHAs or IP-based restrictions, are often ineffective and may even exacerbate the problem.
 
     ## The Engineering Approach
 
-    To address this issue, we can employ a decentralized identity verification approach using cryptographic techniques. This involves creating a digital identity for each user, which is then verified through a network of nodes. The key challenge is to ensure that the identity is unique and cannot be easily forged.
+    To address Sybil attacks, we need a solution that verifies the authenticity of users without compromising their anonymity. One approach is to use a decentralized identity system that leverages blockchain technology. This system would allow users to create and manage their own identities, ensuring that each user is unique and verifiable.
 
-    ## Trestle's Solution
+    ## A Technical Solution
 
-    Trestle offers a decentralized identity verification system that uses a combination of cryptographic techniques and game-theoretic incentives to prevent sybil attacks. The system is designed to be scalable and can handle a large number of users.
-
-    ## Stress-Testing
+    Trestle offers a decentralized identity solution that elegantly addresses the Sybil
